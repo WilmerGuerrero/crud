@@ -1,4 +1,4 @@
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule, FormGroup } from '@angular/forms';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
@@ -13,6 +13,7 @@ import {AngularFireModule} from '@angular/fire'
 })
 export class PrincipalComponent implements OnInit {
 
+  user:FormGroup;
   constructor() { }
 
   ngOnInit() {
